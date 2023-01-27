@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    src: url('fontes\idroid.otf')format('opentype');
+    font-weight: normal;
+} 
+  
+
+:root {
+    --corfundo #B48AE3;
+    --cortexto #000000;
+    --corsombra #300066;
+    --corbox #9248E8;
+
+    --fonte-padrao: 'Arial', 'Verdana', 'Helvetica', 'sans-serif';
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'Android', 'cursive';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: #8B6BB0;
+    font-family: 'Arial';
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+main p {
+
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1.1em;
+
+}
+
+header {
+
+    
+    background-image:linear-gradient(to top,#B441E3,#300066);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+header > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    padding: 10px;
+    background-color: #300066;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.219);
+    text-align: center;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.6s;
+}
+
+
+nav > a:hover {
+    background-color: #B441E3;
+    border-radius: 20px;
+
+}
+main {
+   
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color:#B48AE3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+main h1 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 2em;
+    color: var(--cortexto);
+    font-family: 'Bebas Neue';
+    
+}
+
+main strong {
+    color: black;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a {
+    
+    color: white; 
+    background-color: #8B6BB0;
+    padding: 2px 6px;
+    transition: 0.3s;
+}
+
+main a:hover {
+    color: white;
+    background-color: #5000ac8c;
+    
+}
+
+main h2 {
+    font-weight: normal;
+    padding: 8px;
+    font-size: 1.7em;
+    font-family: 'Bebas Neue';
+    background-image: linear-gradient(to right, #8B6BB0, transparent);
+    text-indent: 8px;
+}
+
+main img {
+    width: 100%;
+
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: #8B6BB0;
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 56%;
+position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside {
+    background-color: #8B6BB0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3 {
+    color: white;
+    background-color: #300066;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+aside p {
+    margin: 15px 0px;
+    text-align: center;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+footer {
+    font-size: 1em;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #300066;
+    color: white;
+    text-align: center;
+
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: #B441E3;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+h3 {
+    padding: 10px;
+    text-align: center;
+}
