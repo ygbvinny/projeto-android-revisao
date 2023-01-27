@@ -77,7 +77,7 @@ header > p {
 }
 
 nav {
-    padding: 10px;
+    padding: 15px;
     background-color: #300066;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.219);
     text-align: center;
@@ -88,7 +88,7 @@ nav > a {
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
-    transition-duration: 0.6s;
+    transition-duration: 0.1s;
 }
 
 
